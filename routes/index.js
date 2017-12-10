@@ -1,20 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var Web3 = require('web3');
+var infura = require('../modules/infura');
 
-// Set up web3
-if (typeof web3 !== 'undefined') {
-  web3 = new Web3(web3.currentProvider);
-} else {
-  // set the provider you want from Web3.providers
-  var infuraKey = '';
-  var infuraNetwork = 'mainnet';  // See enum of options in their docs.
-  web3 = new Web3(new Web3.providers.HttpProvider("https://" + infuraNetwork + ".infura.io/" + infuraKey));
-}
-
-var sync = web3.eth.syncing;
-console.log(sync);
-
+infura.initializeWeb3('mainnet');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

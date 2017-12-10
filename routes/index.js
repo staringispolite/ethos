@@ -10,7 +10,8 @@ router.get('/', function(req, res, next) {
 
     res.render('index', {
       title: 'Etherium prototyping',
-      isConnected: isConnected
+      isConnected: isConnected,
+      network: process.env.INFURA_NETWORK
     });
   });
 });

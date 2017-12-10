@@ -7,7 +7,8 @@ if (typeof web3 !== 'undefined') {
   web3 = new Web3(web3.currentProvider);
 } else {
   // set the provider you want from Web3.providers
-  web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/5zWCKSuc1Rxqnmj5wld4"));
+  var infuraKey = '';
+  web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/" + infuraKey));
 }
 
 var sync = web3.eth.syncing;

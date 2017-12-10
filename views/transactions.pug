@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  a(href="/") < back
+  h1= title
+  h2 transaction data for id #{txnid}:
+  pre #{txnJSON}
+
+  p Look wrong? Compare to 
+    a(href="https://etherscan.io/tx/#{txnid}") EtherScan's entry

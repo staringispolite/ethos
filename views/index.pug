@@ -6,5 +6,16 @@ block content
 
   p Are we connected to Infura? #{isConnected}
 
-  h2 transaction data for id #{txnid}:
-  p #{txnJSON}
+  h2 Info on transactions:
+  form(action="/transaction")
+    label(
+      for="txn_id"
+      ) Txn ID:
+    input(
+      type="text"
+      name="txn_id"
+      id="txn_id"
+      )
+    button(
+      id="txn_submit"
+      ) Search >

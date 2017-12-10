@@ -8,7 +8,12 @@ var bodyParser = require('body-parser');
 // Load env variables
 require('dotenv').config();
 
+// Load web3 connection to Etherium
+var infura = require('./modules/infura');
+infura.initializeWeb3();
+
 var index = require('./routes/index');
+var transactions = require('./routes/transactions');
 var users = require('./routes/users');
 
 var app = express();
@@ -27,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/transaction', transactions);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

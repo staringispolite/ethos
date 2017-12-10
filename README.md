@@ -1,7 +1,7 @@
 # ethos (n.) -
 ## The character, sentiment, or disposition of a community or people.
 
-Etherium blockchain prototypes in 10 mins, no etherium node required.
+Etherium blockchain prototypes in 10 mins, no etherium node required for reads.
 
 ## Installation
 
@@ -22,4 +22,4 @@ Etherium blockchain prototypes in 10 mins, no etherium node required.
 * Which heavily relies on [Promises](https://spring.io/understanding/javascript-promises)
 * The server is Node using [Express](http://expressjs.com/en/guide/routing.html)
 * [Pug templates](https://pugjs.org/language/attributes.html)
-* More on [Infura](https://infura.docs.apiary.io), which essentially replaces geth
+* More on [Infura](https://infura.docs.apiary.io), essentially a read-only cloud-based geth

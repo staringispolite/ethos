@@ -2,4 +2,11 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Here are some Hello World level experiments with Infrura
+
+  p Are we connected to Infura? #{isConnected}
+
+  p What's the most recent block number it has? #{blockNumber}
+
+  h2 transaction data for id #{txnid}:
+  p #{txnJSON}

@@ -10,6 +10,7 @@ Etherium blockchain prototypes
 * `git clone https://github.com/staringispolite/ethos`
 * `cd ethos`
 * `npm install`
-* Add your token to modules/infura.js
+* `cp .env.sample .env`
+* Add your token and desired network to .env
 * `DEBUG=ethos:* npm start`
 * Load http://server.ip.addr.here:3000

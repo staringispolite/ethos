@@ -6,7 +6,7 @@ Etherium blockchain prototypes in 10 mins, no etherium node required for reads.
 ## Installation
 
 * Digital Ocean or other server
-* Sign up to Infura (free) to [https://blog.infura.io/getting-started-with-infura-28e41844cc89](get your token)
+* Sign up to Infura (free) to [get your token](https://blog.infura.io/getting-started-with-infura-28e41844cc89)
 * `git clone https://github.com/staringispolite/ethos`
 * `cd ethos`
 * `npm install`
